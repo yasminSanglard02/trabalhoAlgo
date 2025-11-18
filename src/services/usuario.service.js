@@ -2,6 +2,10 @@ import usuarioRepository from "../repositories/usuario.repository.js";
 
 async function createUsuarioServices(novoUsuario) {
     const usuario = await usuarioRepository.createUsuarioRepository(novoUsuario);
+
+    if (!usuario) {
+        throw new  Error("Erro ao criar cliente");
+    }
     return usuario;
 }
 
