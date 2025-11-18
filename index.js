@@ -1,7 +1,5 @@
 import express from "express";
 import usuarioRouters from "./scr/routes/usuario.routes.js";
-import { count } from "console";
-import { console } from "inspector";
 
 const app = express();
 
